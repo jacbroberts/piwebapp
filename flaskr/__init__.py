@@ -25,7 +25,7 @@ def create_app(test_config=None):
 	from . import auth
 	app.register_blueprint(auth.bp)
 
-	@app.route('/hello')
+	@app.route('/')
 	def hello():
 		return "Hello, World!"
 
