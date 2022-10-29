@@ -19,7 +19,7 @@ def register():
 		error = 'Username is required.'
 
 	elif not password:
-		error: = 'Password is required.'
+		error = 'Password is required.'
 
 	if error is None:
 		try:
@@ -84,21 +84,3 @@ def login_required(view):
 			return redirect(url_for('auth.login'))
 		return view(**kwargs)
 	return wrapped_view
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
